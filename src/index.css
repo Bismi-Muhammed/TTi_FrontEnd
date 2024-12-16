@@ -1,0 +1,44 @@
+/* src/components/Tabs.css */
+
+/* Style to position the tabs at the bottom of the screen */
+.bottom-tabs-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Add styles for the Tab bar itself */
+.MuiTabs-root {
+  background-color: #333; /* Dark background for the tabs */
+}
+
+.MuiTab-root {
+  color: white; /* White color for text */
+}
+
+/* Active Tab style (when the tab is selected) */
+.Mui-selected {
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for tabs */
+.MuiTab-root:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+
+.css-hmk518-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #f5f5f5 !important;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.MuiTab-textColorPrimary{
+  color: rgb(201, 201, 201) !important;
+}
