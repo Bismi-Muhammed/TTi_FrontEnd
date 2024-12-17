@@ -28,8 +28,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tti" element={<TravelTimeIndexTable />} />
-        <Route path="/sali" element={<Salik />} />
-        <Route path="/jume" element={<Jumeirah />} />
+        <Route path="/salik" element={<Salik />} />
+        <Route path="/jumeirah" element={<Jumeirah />} />
       </Routes>
       <BottomTabs /> {/* Display tabs on every page, placed outside Routes */}
     </Router>

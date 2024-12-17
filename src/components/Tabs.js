@@ -26,15 +26,15 @@ const BottomTabs = () => {
         />
         <Tab
           label="Salik"
-          value="/sali"
+          value="/salik"
           component={Link}
-          to="/sali"
+          to="/salik"
         />
         <Tab
           label="Jumeirah"
-          value="/jume"
+          value="/jumeirah"
           component={Link}
-          to="/jume"
+          to="/jumeirah"
         />
       </Tabs>
     </div>
