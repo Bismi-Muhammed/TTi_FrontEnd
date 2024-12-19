@@ -829,6 +829,9 @@ const TravelTimeIndexTable = () => {
   const totalAmFreeFlowTime = filteredAmPeakData.reduce((acc, row) => acc + row.free_flow_avg_travel_time, 0);
   const amPeakTTI = totalAmFreeFlowTime !== 0 ? totalAmTravelTime / totalAmFreeFlowTime : 0;
 
+  console.log({totalAmTravelTime,totalAmFreeFlowTime});
+  
+
   // Calculate PM Peak TTI (Sum of Travel Time / Sum of Free Flow Time)
   const totalPmTravelTime = filteredPmPeakData.reduce((acc, row) => acc + row.pm_peak_avg_travel_time, 0);
   const totalPmFreeFlowTime = filteredPmPeakData.reduce((acc, row) => acc + row.free_flow_avg_travel_time, 0);
@@ -872,7 +875,9 @@ const TravelTimeIndexTable = () => {
   return (
     <div>
       <div className="nav-bar">
-        <h1>PDP - Travel Time Index Daily</h1>
+        <h1>PDP - Travel Time Index Daily   <button disabled className="button" onClick={downloadExcel} title="Application is in Development">
+      Development
+    </button></h1>
         <div className="nav-images">
           <img src="/dubaigovt-rta-combined-logo.png" alt="Sample 2" className="nav-image" />
         </div>
